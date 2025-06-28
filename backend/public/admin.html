@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Add College | College Discovery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <button id="darkToggle" class="dark-toggle">🌙 Dark </button>
+        <h1>🔐 Admin Panel</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="admin.html" class="active">Admin</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Login Section -->
+    <section class="admin-section" id="loginSection">
+        <h2>Admin Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="adminLogin()">Login</button>
+    </section>
+
+    <!-- Add College Section -->
+    <section id="adminSection" class="admin-section" style="display:none;">
+        <h2>Add New College</h2>
+        <input type="text" id="cname" placeholder="College Name"><br>
+        <input type="text" id="city" placeholder="City"><br>
+        <input type="text" id="contact" placeholder="Contact Number"><br>
+        <input type="text" id="rating" placeholder="Rating"><br>
+        <input type="text" id="courses" placeholder="Courses Offered (e.g., MCA, B.Tech)"><br>
+        <input type="text" id="fees" placeholder="Fees"><br>
+        <button onclick="addCollege()">Add College</button>
+        <br><br>
+        <a href="index.html" class="back-button">⬅️ Back to Home</a>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 College Discovery | Admin Panel</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
